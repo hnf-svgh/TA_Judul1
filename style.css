@@ -1,0 +1,367 @@
+/* === RESET & DASAR === */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333; /* Teks abu-abu gelap */
+    background-color: #ffffff; /* Latar belakang putih */
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2, h3, h4 {
+    color: #1a1a1a; /* Teks hitam */
+}
+
+/* Tombol dasar */
+.btn-primary {
+    display: inline-block;
+    background-color: #007bff; /* Aksen biru */
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Biru lebih gelap saat hover */
+    transform: translateY(-2px);
+}
+
+/* === NAVBAR (Ada perubahan untuk logo agar lebih menonjol) === */
+.navbar {
+    background-color: #ffffff; /* Latar belakang putih */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1); /* Shadow lebih lembut */
+    border-bottom: 1px solid #ffffff;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #1a1a1a; /* Logo hitam */
+    font-weight: 900; /* Lebih tebal */
+    font-size: 1.8em; /* Lebih besar */
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: #555555; /* Teks abu-abu */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+    padding-bottom: 5px; 
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+
+/* === HERO HEADER (HEADER BARU) === */
+.hero-header {
+    background-color: #ffffff; /* Latar belakang terang untuk header */
+    padding: 100px 0; /* Padding lebih besar */
+    position: relative;
+    overflow: hidden; /* Penting agar gambar tidak keluar batas */
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px; /* Jarak antara teks dan gambar */
+    position: relative;
+    z-index: 2; /* Agar di atas elemen latar belakang jika ada */
+}
+
+.hero-text {
+    flex: 1; /* Ambil ruang yang tersedia */
+    max-width: 50%; /* Batasi lebar teks agar tidak terlalu panjang */
+}
+
+.hero-text h1 {
+    font-family: 'Playfair Display', serif; /* Font yang lebih elegan untuk headline */
+    font-size: 3.8em; /* Lebih besar */
+    line-height: 1.1;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+    font-weight: 900; /* Sangat tebal */
+}
+
+.hero-text h1 strong {
+    color: #007bff; /* Aksen warna pada nama */
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    color: #555555;
+    margin-bottom: 30px;
+    max-width: 80%; /* Batasi lebar paragraf */
+}
+
+.hero-text p strong {
+    color: #1a1a1a; /* Penekanan pada skill */
+    font-weight: 700;
+}
+
+.hero-image {
+    flex: 1; /* Ambil ruang yang tersedia */
+    display: flex; /* Untuk memusatkan gambar */
+    justify-content: flex-end; /* Dorong gambar ke kanan */
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%; /* Gambar akan mengisi 100% dari parent-nya */
+    max-width: 500px; /* Batasi ukuran maksimal gambar */
+    height: auto;
+    border-radius: 10px; /* Sedikit membulat pada sudut */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* Shadow lebih besar */
+    object-fit: cover;
+    display: block; /* Menghilangkan spasi bawah gambar */
+}
+
+/* === MAIN CONTENT LAYOUT === */
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    padding: 60px 0;
+    background-color: #ffffff; /* Ubah ke putih untuk kontras */
+}
+
+/* === PROFILE SECTION (KONTEN UTAMA - HANYA TEKS) === */
+.profile-section {
+    padding-right: 20px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.profile-text-only h2 { 
+    font-size: 2em;
+    margin-top: 0;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.profile-text-only p strong {
+    color: #007bff;
+}
+
+/* === SIDEBAR (MODIFIKASI: DIGABUNG & FONT KECIL) === */
+.sidebar {
+    display: block; /* Menghapus flex karena hanya ada 1 card */
+}
+
+.sidebar-card {
+    background-color: #f9f9f9; /* Latar belakang kartu sidebar lebih terang */
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.sidebar-card h3 {
+    font-size: 1.2em; /* Judul sub-bagian dikecilkan */
+    color: #1a1a1a;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 8px;
+    margin-top: 15px; /* Jarak atas untuk sub-bagian */
+    margin-bottom: 10px;
+}
+
+.sidebar-card h3:first-of-type {
+    margin-top: 0; /* Hapus margin atas pada judul pertama (Educational History) */
+}
+
+/* Garis pemisah baru */
+.sidebar-divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0; /* Jarak pemisah */
+}
+
+/* Pendidikan Styles - Font dikecilkan */
+.edu-item {
+    margin-bottom: 10px;
+    border-left: 3px solid #007bff;
+    padding-left: 10px;
+}
+
+.edu-item h4 {
+    margin: 0;
+    font-size: 1.0em; /* Dikecilkan */
+    font-weight: 700;
+}
+
+.edu-item p {
+    margin: 0;
+    font-size: 0.85em; /* Dikecilkan */
+    color: #555555;
+}
+
+/* Prestasi Styles - Font dikecilkan */
+.achievement-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 0.9em; /* Dikecilkan */
+}
+
+.achievement-list li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.achievement-list li::before {
+    content: "•";
+    color: #007bff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
+
+/* Kontak Styles - Font dikecilkan */
+.contact-sidebar p {
+    font-size: 0.9em; /* Dikecilkan */
+}
+
+.contact-sidebar a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-sidebar a:hover {
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+
+/* === FOOTER (TIDAK BERUBAH) === */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f0f0;
+    color: #000;
+    font-size: 0.9em;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 992px) {
+    .hero-content {
+        flex-direction: column; /* Tumpuk vertikal di layar kecil */
+        text-align: center;
+        padding: 60px 0;
+        gap: 30px;
+    }
+
+    .hero-text {
+        max-width: 100%; /* Teks mengambil lebar penuh */
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5em; /* Ukuran headline lebih kecil */
+    }
+
+    .hero-text p {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        justify-content: center; /* Pusatkan gambar */
+        order: -1; /* Pindahkan gambar ke atas teks */
+    }
+
+    .hero-image img {
+        max-width: 300px; /* Gambar lebih kecil di mobile */
+    }
+
+    .main-content {
+        grid-template-columns: 1fr; /* Sidebar di bawah konten utama */
+        padding: 40px 0;
+    }
+    
+    .profile-section {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 40px;
+    }
+
+    .profile-text-only {
+        text-align: left; /* Teks tetap rata kiri */
+    }
+
+    .sidebar {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links li a {
+        font-size: 0.8em;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    .hero-image img {
+        max-width: 250px;
+    }
+}
