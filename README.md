@@ -1,7 +1,7 @@
 # 🌟 Professional Portfolio Website | Muhammad Hanif Saputra
 
-[![Status Proyek](https://img.shields.io/badge/Status-Complete-brightgreen)](https://github.com/yourusername/repo-name)
-[![Teknologi Utama](https://img.shields.io/badge/Tech-HTML%20%7C%20CSS-blue)](https://github.com/yourusername/repo-name)
+[![Status Proyek](https://img.shields.io/badge/Status-Complete-brightgreen)](https://github.com/hnf-svgh/TA_Judul1)
+[![Teknologi Utama](https://img.shields.io/badge/Tech-HTML%20%7C%20CSS-blue)](https://github.com/hnf-svgh/TA_Judul1)
 
 ---
 
