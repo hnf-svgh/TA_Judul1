@@ -83,6 +83,6 @@ Untuk melihat dan menjalankan *website portfolio* ini:
 
 | Deskripsi | Tautan |
 | :--- | :--- |
-| **Profil GitHub** | [https://github.com/yourusername](https://github.com/https://github.com/hnf-svgh/TA_Judul1) |
+| **Profil GitHub** | [https://github.com/hnf-svgh](https://github.com/https://github.com/hnf-svgh/TA_Judul1) |
 
 ---
