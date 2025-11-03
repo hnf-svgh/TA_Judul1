@@ -63,9 +63,7 @@ Anda hanya memerlukan *Web Browser* modern (seperti Chrome, Firefox, atau Edge) 
 
 ## ⚙️ Pengemebangan Git
 <img width="335" height="85" alt="image" src="https://github.com/user-attachments/assets/e20dcdbf-f3d0-4b4e-85b8-70b3de5ee030" />
-
-
-Untuk mendapatkan salinan proyek ini dan menjalankannya secara lokal, ikuti langkah-langkah berikut.
+hasil perintah git log --graph --oneline.
 
 
 ## 🚀 Penggunaan
