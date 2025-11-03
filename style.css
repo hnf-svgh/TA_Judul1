@@ -1,10 +1,10 @@
-/* === RESET & DASAR === */
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333333; /* Teks abu-abu gelap */
-    background-color: #ffffff; /* Latar belakang putih */
+    color: #333333; 
+    background-color: #ffffff; 
     line-height: 1.6;
 }
 
@@ -15,13 +15,13 @@ body {
 }
 
 h1, h2, h3, h4 {
-    color: #1a1a1a; /* Teks hitam */
+    color: #1a1a1a; 
 }
 
-/* Tombol dasar */
+
 .btn-primary {
     display: inline-block;
-    background-color: #007bff; /* Aksen biru */
+    background-color: #007bff; 
     color: #ffffff;
     padding: 12px 25px;
     border-radius: 5px;
@@ -32,20 +32,21 @@ h1, h2, h3, h4 {
 }
 
 .btn-primary:hover {
-    background-color: #0056b3; /* Biru lebih gelap saat hover */
+    background-color: #0056b3;
     transform: translateY(-2px);
 }
 
-/* === NAVBAR (Ada perubahan untuk logo agar lebih menonjol) === */
+
 .navbar {
-    position: fixed;
-     top: 0;
-     width: 100%;
-     z-index: 1000; 
-     background-color: rgba(255, 255, 255, 0.9); 
-     padding: 15px 0;
-     box-shadow: 0 1px 5px rgba(0,0,0,0.05); /* Shadow sangat lembut */
-     border-bottom: none; 
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    background-color: #1a1a1a; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); 
+    border-bottom: none; 
+    padding: 15px 0;
 }
 
 .nav-container {
@@ -55,9 +56,9 @@ h1, h2, h3, h4 {
 }
 
 .logo {
-    color: #1a1a1a; /* Logo hitam */
-    font-weight: 900; /* Lebih tebal */
-    font-size: 1.8em; /* Lebih besar */
+    color: #ffffff;
+    font-weight: 900; 
+    font-size: 1.8em; /
     letter-spacing: 2px;
 }
 
@@ -70,7 +71,7 @@ h1, h2, h3, h4 {
 }
 
 .nav-links li a {
-    color: #555555; /* Teks abu-abu */
+    color: #cccccc; 
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -98,71 +99,70 @@ h1, h2, h3, h4 {
 }
 
 
-/* === HERO HEADER (HEADER BARU) === */
+
 .hero-header {
-    background-color: #ffffff; /* Latar belakang terang untuk header */
-    padding: 100px 0; /* Padding lebih besar */
+    background-color: #ffffff;
+    padding: 100px 0; 
     position: relative;
-    overflow: hidden; /* Penting agar gambar tidak keluar batas */
+    overflow: hidden; /
 }
 
 .hero-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px; /* Jarak antara teks dan gambar */
+    gap: 50px; 
     position: relative;
-    z-index: 2; /* Agar di atas elemen latar belakang jika ada */
+    z-index: 2;
 }
 
 .hero-text {
-    flex: 1; /* Ambil ruang yang tersedia */
-    max-width: 50%; /* Batasi lebar teks agar tidak terlalu panjang */
+    flex: 1; 
+    max-width: 50%; 
 }
 
 .hero-text h1 {
-    font-family: 'Playfair Display', serif; /* Font yang lebih elegan untuk headline */
-    font-size: 3.8em; /* Lebih besar */
+    font-family: 'Playfair Display', serif; 
+    font-size: 3.8em; 
     line-height: 1.1;
     margin-bottom: 15px;
     color: #1a1a1a;
-    font-weight: 900; /* Sangat tebal */
+    font-weight: 900;/
 }
 
 .hero-text h1 strong {
-    color: #007bff; /* Aksen warna pada nama */
+    color: #007bff; 
 }
 
 .hero-text p {
     font-size: 1.2em;
     color: #555555;
     margin-bottom: 30px;
-    max-width: 80%; /* Batasi lebar paragraf */
+    max-width: 80%;
 }
 
 .hero-text p strong {
-    color: #1a1a1a; /* Penekanan pada skill */
+    color: #1a1a1a; 
     font-weight: 700;
 }
 
 .hero-image {
-    flex: 1; /* Ambil ruang yang tersedia */
-    display: flex; /* Untuk memusatkan gambar */
-    justify-content: flex-end; /* Dorong gambar ke kanan */
+    flex: 1;
+    display: flex; 
+    justify-content: flex-end; 
     align-items: center;
 }
 
 .hero-image img {
-    width: 100%; /* Gambar akan mengisi 100% dari parent-nya */
-    max-width: 500px; /* Batasi ukuran maksimal gambar */
+    width: 100%; 
+    max-width: 500px; 
     height: auto;
-    border-radius: 10px; /* Sedikit membulat pada sudut */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* Shadow lebih besar */
+    border-radius: 10px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
     object-fit: cover;
-    display: block; /* Menghilangkan spasi bawah gambar */
+    display: block; /
 }
 
-/* === MAIN CONTENT LAYOUT === */
 .main-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -171,7 +171,6 @@ h1, h2, h3, h4 {
     background-color: #ffffff; /* Ubah ke putih untuk kontras */
 }
 
-/* === PROFILE SECTION (KONTEN UTAMA - HANYA TEKS) === */
 .profile-section {
     padding-right: 20px;
     border-right: 1px solid #e0e0e0;
@@ -190,7 +189,6 @@ h1, h2, h3, h4 {
     color: #007bff;
 }
 
-/* === SIDEBAR (MODIFIKASI: DIGABUNG & FONT KECIL) === */
 .sidebar {
     display: block; /* Menghapus flex karena hanya ada 1 card */
 }
@@ -213,7 +211,7 @@ h1, h2, h3, h4 {
 }
 
 .sidebar-card h3:first-of-type {
-    margin-top: 0; /* Hapus margin atas pada judul pertama (Educational History) */
+    margin-top: 0; 
 }
 
 /* Garis pemisah baru */
